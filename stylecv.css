@@ -1,0 +1,134 @@
+
+.bloc_page{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    border: solid 2px #FFB74D;
+    display: flex;
+}
+
+header{
+    display: flex;
+    padding-bottom: 0;
+}
+
+.titre_doc{
+    text-align: left;  
+    margin-left: 20%; 
+    margin-top: 60px;
+}
+
+aside{
+    background-color: #FFB74D;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  
+}
+
+p{
+    text-align: left;
+    text-align: justify;
+}
+
+img{
+    border-radius: 600px;
+}
+
+.lorem1{
+    text-align: justify;
+    margin: left;
+    margin: 8%;
+}
+
+.section{
+    display: block;
+    margin-left: 5%;  
+}
+
+
+#partie_droite{
+    width: 65%;
+}
+
+.section_centrale{
+    width: 30%;
+    margin-left: 0;
+    display: flex;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.section_droite{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 5%;
+    width: 70%;
+
+}  
+
+
+h2{
+    border-bottom: solid 2px #37474F;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+h3{
+    display: block;
+    color: #FFB74D;
+    background-color: #37474F;
+    font-weight: bold;
+    
+}
+#partie_gauche{
+    background-color: #FFB74D;
+    width: 35%;
+}
+
+.section_banniere{
+    border: solid 1px #FFB74D;
+    background-color: #FFB74D;
+    color: #37474F;
+    text-align: center;
+    margin-top: 0;
+
+}
+
+h2{
+    color: #6E4A46;  
+    font-size: 1.5em;
+    display: block;  
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+
+@media all and (max-width: 1024px){
+
+    #banniere{
+        display: none;
+    }
+
+    section{
+        display: block;
+        width: auto;
+    }
+
+    #contenu{
+        width: auto;
+       
+    }
+
+
+}
+
+
+
+
+
