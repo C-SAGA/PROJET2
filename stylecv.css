@@ -60,7 +60,7 @@ p{
 }
 
 #bloc-droit{
-   padding-left: 2%;
+   padding-left: 40px;
    padding-right: 2%;
 }
 
@@ -182,7 +182,7 @@ h2{
 }
 
 #footer_droit{
-    padding-top: 16em;
+    padding-top: 25em;
 }
 
 footer h3{
