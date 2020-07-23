@@ -13,13 +13,11 @@ body{
 }
 header{
     display: flex;
-    padding-bottom: 0;
-    position: relative;
+    flex-direction: column;
 }
 
 .titre_doc{
     text-align: left;  
-    margin-left: 20%; 
     margin-top: 60px;
 }
 
