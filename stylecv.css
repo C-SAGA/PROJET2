@@ -16,6 +16,10 @@ header{
     flex-direction: column;
 }
 
+#titre_nom{
+    margin-bottom: 0;
+}
+
 .titre_doc{
     text-align: left;  
     margin-top: 60px;
