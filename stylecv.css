@@ -92,7 +92,7 @@ p{
     width: 30%;
 }
 
-#seconde_partie{  
+.seconde_partie{  
     display: flex;
     align-items: center;
     width: 100%
