@@ -1,32 +1,36 @@
 
 /* En-tête page*/
-.bloc_page{
-    width: 1190px;
-    margin: auto;
-    border: solid 2px #FFB74D;
-    display: flex;
-}
+
 
 body{
     height: 100%;
     position: relative;
+    border: solid 2px #FFB74D;
+    width: 1190px;
 }
 header{
     display: flex;
-    flex-direction: column;
+    padding-bottom: 0;
+  
+    display: flex;
+
 }
 
-#titre_nom{
-    margin-bottom: 0;
+main{
+    display: flex;
 }
+
 
 .titre_doc{
+    background-color: #fff;
     text-align: left;  
+    margin-left: 5%; 
     margin-top: 60px;
 }
 
 .sous_titre{
    font-size: 1.5em;
+   text-align: left;
 }
 
 span.souligné{
@@ -38,30 +42,34 @@ span.souligné{
 
 /* Bannière*/
 aside{
+    width: 30%;
     background-color: #FFB74D;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;  
+    border-right: solid 1px #FFB74D;
+    
 }
 
 img{
-    border-radius: 600px;
-}
+    border-radius: 50% 50%;
+    border: 2px solid #FF8A65;
+    
+
+ }  
 
 .photo{
     text-align: center;
-    margin-top: 15px;
+    margin-top: 0px;
+    padding-top: 18px;
+    position: relative;
+    background-color: #FFB74D;
+    width: 30%;
+
 }
 
 p{
+    display: block;
     text-align: justify;
-    margin-right: 2px;
-    padding-left: 10px;
-}
-
-#bloc-droit{
-   padding-left: 40px;
-   padding-right: 2%;
+    margin-right: 15px;
+    padding-right: 30px;   
 }
 
 .section_banniere{
@@ -72,26 +80,57 @@ p{
     margin-top: 0;
 }
 
-.Texte_Lorem{
+
+.coordonnees{
+    display: block;
+    padding-left: 10px;
+    text-align: left;
+}
+
+.Lorem{
+    display: block;
     text-align: justify;
-    margin-right: 10px;
+    padding-right: 50px;
+    padding-left: 20px;
 }
 
 
+
 /* Corps principal du document */
+
+#section_droite{
+    width: 65%;
+}
+
+
+#bloc-droit{
+   width: 65%;
+   margin-left: 20px;
+}
+
 
 #puces{
     width: 30%;
     margin-left: 0;
     display: flex;
 }
+
 .bloc_date_et_contenu{
     display: flex;
-    align-items: center;
 }
 
+
 .bloc_date{
-    width: 30%;
+    margin-left: 10px;
+    width: 30%
+}
+
+.detail{
+    margin-top: -15px;
+}
+
+span titre, p{
+    margin-left: 140px;
 }
 
 .seconde_partie{  
@@ -110,13 +149,16 @@ p{
     margin: auto;
 }
 
+
 .section_centrale{
     width: 30%;
 }
-div .section_centrale{
 
-
+.section_gauche{
+   margin-block-start: 30px;
 }
+
+
 .section_droite{
     display: flex;
     flex-direction: column;
@@ -124,29 +166,38 @@ div .section_centrale{
     flex-wrap: wrap;
     margin-left: 10%;
     margin-right: 200px;
+     width: 65%;
 }  
 
 h1{
-     font-size: 2.6em;  
+     font-size: 2.6em; 
+     margin-block-end: 0.3em; 
+
 }
 
 h1 span{
     color: #FFB74D;
 }
-a, .fas{
-    color: #FFB74D;
-    font-size: 7px;
-    margin-top: 54px;
+
+div i{
+    padding-bottom: 20px;
 }
 
 .far{
    color: #FFB74D;
     font-size: 14px; 
     font-weight: 400;
+    padding-right: 10px;
+}
+.fas{
+    font-size: 6px;
+    color: #FFB74D;
+     font-weight: 400;
+     padding-right: 10px;
 }
 
 .fa-graduation-cap, .fa-pencil-alt, .fa-briefcase{
-    font-size: 21px;
+    font-size: 28px;
     color: #FFB74D;
 }
 
@@ -156,6 +207,8 @@ h3{
     background-color: #37474F;
     font-weight: bold;
     font-size: 22px;
+    padding: 4%;
+    margin: 0;
 }
 
 h2{
@@ -169,21 +222,15 @@ h2{
     text-transform: uppercase;
 }
 
-#main{
-    position: relative;
-    padding-bottom: 100%;
-}
 
 /* footer*/
 
 #footer_left{  
     text-align: center;
     padding-top: 380px;
+    padding-block-end: 20px;
 }
 
-#footer_droit{
-    padding-top: 25em;
-}
 
 footer h3{
     display: block;
@@ -200,20 +247,19 @@ footer h3{
     border-radius: 50% 50%;
     justify-content: space-evenly;
     display: flex;
+    align-items: flex-start;
+   
 }
  
-
-
 .fa-paw, .fa-baseball-ball{   
-    display: block;
-    font-size: 71px;  
+    padding: 0.1em 0.1em 0.1em 0.1em;
+    font-size: 68px;  
     color: #37474F;     
     font-weight: 900;
     line-height: 1;
-}
-
-.zumba{
-    padding-top: 50px;
+    border: 2px solid #FF8A65;
+    border-radius: 50% 50%;  
+    background-color: #EEE; 
 }
 
 
@@ -227,36 +273,109 @@ footer .section_centrale{
     margin-inline-end: 0px;
 }
 
- footer .bloc_section_droite{
-    margin-top: -100px;
-    margin-left: 100px;
-}
-
-
-#footer_right{
-    display: flex;  
-    align-items: center;
-}
 
 .derniere_partie{
     margin-top: -220px;
 }
 
-
+#footer_droit{
+    margin-block-start: -30px;
+}
 
 /* Responsive*/
-@media all and (max-width: 425px){
+@media (max-width: 800px){
+   
 
-    #partie_gauche{
-        width: unset;
+    .photo{
+        width: 95%;
+        height: 300px;
+        padding: 5% 0 5% 0;
+        text-align: center;
+    }
+   
+    h1{
+        width: 95%;
+        text-align: right;
+        margin-left: 50px;
+        font-size: 50px;
+    }
+
+    .sous_titre{
+        width: 95%;
+        text-align: end;
+        font-size: 30px;
+        margin-left: 0;
+    }
+
+    header{
+        flex-direction: column;
+        height: 500px;
     }
 
     main{
-       flex-direction: column;
-       width: auto; 
-       font-size: 30px;
+         width: 95%;
+        display: flex;
+        flex-direction: column-reverse;
+        font-size: 30px;
+    }    
+
+    aside{
+        width: 95%
     }
+
+    .section_gauche{
+        text-align: center;
+        width: 95%;
+    }
+
+    .section_banniere h3, #footer_left h3{
+        border-right: none;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        font-size: 35px;
+    }
+
+    .coordonnees{
+        padding: 8% 15% 8% 15%
+        font-weight: bold;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .Lorem{
+        padding: 8% 15% 8% 15%;
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+   #footer_left{
+        border-right: none;
+        border-bottom: 1px solid black;
+        font-size: 35px;
+        width: 95%;
+   }
+
+   .icones_sport{
+    font-size: 80px;
+
+   }
+
+    #bloc_droit{
+        width: 100%;
+       margin: auto;
+       text-align: center;
+    }
+
+
+
 }
+
+
+
+
+
+
+
 
 
 
