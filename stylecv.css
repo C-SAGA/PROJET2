@@ -234,7 +234,7 @@ h2{
 
 #footer_left{  
     text-align: center;
-    padding-top: 380px;
+    padding-top: 420px;
     padding-block-end: 20px;
 }
 
@@ -329,7 +329,7 @@ footer .section_centrale{
     main{
         flex-direction: column-reverse;
         font-size: 30px; 
-         
+           
     }    
 
    #bloc-droit{
