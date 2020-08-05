@@ -8,6 +8,8 @@ body{
     border: solid 2px #FFB74D;
     width: 1190px;
 }
+
+
 header{
     display: flex;
     padding-bottom: 0;
@@ -44,7 +46,7 @@ span.souligné{
 aside{
     width: 30%;
     background-color: #FFB74D;
-    border-right: solid 1px #FFB74D;
+    border-right: solid 2px #FFB74D;
     
 }
 
@@ -62,7 +64,8 @@ img{
     position: relative;
     background-color: #FFB74D;
     width: 30%;
-
+    padding: 1% 0 1% 0;
+    border-right: solid 2px #FFB74D;
 }
 
 p{
@@ -78,6 +81,7 @@ p{
     color: #37474F;
     text-align: center;
     margin-top: 0;
+    width: 100%;
 }
 
 
@@ -105,9 +109,12 @@ p{
 
 #bloc-droit{
    width: 65%;
-   margin-left: 20px;
+   margin-left: 50px;
 }
 
+    .bloc_section_droite{
+        margin-right: 50px;
+    }
 
 #puces{
     width: 30%;
@@ -283,8 +290,14 @@ footer .section_centrale{
 }
 
 /* Responsive*/
-@media all and (max-width: 800px){
-   
+@media all and (max-width: 900px){
+  
+    *{
+   -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+      }
+      
     .photo{
         width: 100%;
         height: 300px;
@@ -293,21 +306,21 @@ footer .section_centrale{
     }
    
     h1{
-        width: 95%;
+        width: 100%;
         text-align: right;
         margin-left: 50px;
         font-size: 50px;
     }
 
     .sous_titre{
-        width: 95%;
+        width: 100%;
         text-align: end;
         font-size: 30px;
         margin-left: 0;
     }
 
     header{
-        width: 95%;
+        width: 100%;
         flex-direction: column;
         height: 500px;
         text-align: center;
@@ -320,7 +333,7 @@ footer .section_centrale{
     }    
 
    #bloc-droit{
-    width: 90%;
+    width: 100%;
     margin: auto;
    }
 
@@ -331,7 +344,7 @@ footer .section_centrale{
 
     .section_gauche{
         text-align: center;
-        width: 95%;
+        width: 100%;
     }
 
     .section_banniere h3, #footer_left h3{
@@ -359,7 +372,7 @@ footer .section_centrale{
         border-right: none;
         border-bottom: 1px solid black;
         font-size: 35px;
-        width: 95%;
+        width: 100%;
    }
 
    .icones_sport{
