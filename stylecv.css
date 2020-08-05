@@ -222,7 +222,7 @@ h2{
     color: #37474F;  
     font-size: 1.6em;
     display: block;  
-    margin-block-start: 2.5em;
+    margin-block-start: 1.9em;
     font-weight: bold;
     border-bottom: solid 2px #FFB74D;
     font-weight: bolder;
@@ -329,17 +329,19 @@ footer .section_centrale{
     main{
         flex-direction: column-reverse;
         font-size: 30px; 
-        padding-right: 150px;     
+         
     }    
 
    #bloc-droit{
     width: 100%;
     margin: auto;
+    text-align: center;
    }
 
 
     aside{
         width: 100%;
+
     }
 
     .section_gauche{
