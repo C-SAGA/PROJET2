@@ -292,12 +292,14 @@ footer .section_centrale{
     -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
-          overflow-x: auto;
+          overflow-x: unset;    
       }
-      
-      body{
-        overflow: auto;
-      }
+     
+     html, body{
+        max-width: 800px;
+        overflow-x: hidden;
+     } 
+     
 
     .photo{
         width: 100%;
