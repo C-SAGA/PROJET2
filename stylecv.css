@@ -7,17 +7,12 @@ body{
     position: relative;
     border: solid 2px #FFB74D;
     width: 1190px;
-    overflow: auto;
-   
+    overflow: auto;  
 }
-
 
 header{
     display: flex;
-    padding-bottom: 0;
-  
-    display: flex;
-
+    padding-bottom: 0;   
 }
 
 main{
@@ -105,7 +100,7 @@ p{
 /* Corps principal du document */
 
 #section_droite{
-    width: 65%;
+    width: 70%;
 }
 
 
@@ -144,7 +139,6 @@ span titre, p{
 
 .seconde_partie{  
     display: flex;
-    align-items: center;
     width: 100%
 }
 
@@ -161,6 +155,7 @@ span titre, p{
 
 .section_centrale{
     width: 30%;
+    margin-left: -135px;
 }
 
 .section_gauche{
@@ -173,8 +168,7 @@ span titre, p{
     flex-direction: column;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-left: 10%;
-    margin-right: 200px;
+    margin-left: 15%;
     width: 65%;
 }  
 
@@ -236,7 +230,7 @@ h2{
 
 #footer_left{  
     text-align: center;
-    padding-top: 420px;
+    padding-top: 540px;
     padding-block-end: 20px;
 }
 
@@ -288,16 +282,17 @@ footer .section_centrale{
 }
 
 #footer_droit{
-    margin-block-start: -30px;
+    margin-block-start: 180px;
 }
 
 /* Responsive*/
-@media all and (max-width: 900px){
+@media all and (max-width: 800px){
   
     *{
-   -webkit-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
+          overflow-x: auto;
       }
       
       body{
@@ -334,8 +329,7 @@ footer .section_centrale{
 
     main{
         flex-direction: column-reverse;
-        font-size: 30px; 
-           
+        font-size: 30px;          
     }    
 
    #bloc-droit{
@@ -343,10 +337,8 @@ footer .section_centrale{
     margin: auto;
    }
 
-
     aside{
         width: 100%;
-
     }
 
     .section_gauche{
