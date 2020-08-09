@@ -1,13 +1,16 @@
 
 /* En-tête page*/
-
+html{
+    width: fit-content;
+}
 
 body{
     height: 100%;
     position: relative;
     border: solid 2px #FFB74D;
-    width: 1190px;
-    overflow: auto;  
+    width: 100%;
+    overflow: auto; 
+    margin: 0; 
 }
 
 header{
@@ -65,12 +68,6 @@ img{
     border-right: solid 2px #FFB74D;
 }
 
-p{
-    display: block;
-    text-align: justify;
-    margin-right: 15px;
-    padding-right: 30px;   
-}
 
 .section_banniere{
     border: solid 1px #FFB74D;
@@ -109,9 +106,9 @@ p{
    margin-left: 50px;
 }
 
-    .bloc_section_droite{
-        margin-right: 50px;
-    }
+.bloc_section_droite{
+    margin-right: 50px;
+}
 
 #puces{
     width: 30%;
@@ -121,6 +118,7 @@ p{
 
 .bloc_date_et_contenu{
     display: flex;
+    align-items: baseline;
 }
 
 
@@ -129,12 +127,10 @@ p{
     width: 30%
 }
 
-.detail{
-    margin-top: -15px;
-}
+
 
 span titre, p{
-    margin-left: 140px;
+    margin-top: 0;
 }
 
 .seconde_partie{  
@@ -155,12 +151,13 @@ span titre, p{
 
 .section_centrale{
     width: 30%;
-    margin-left: -135px;
+  
+}
+.detail{
+    padding-left: 60px;
+    padding-right: 20px;
 }
 
-.section_gauche{
-   margin-block-start: 30px;
-}
 
 
 .section_droite{
@@ -174,8 +171,7 @@ span titre, p{
 
 h1{
      font-size: 2.6em; 
-     margin-block-end: 0.3em; 
-
+  
 }
 
 h1 span{
@@ -242,7 +238,7 @@ footer h3{
     background-color: #37474F;
     font-size: 22px;
     overflow: hidden;
-    margin-block-end: -2em;
+
 }  
 
 .icones_sport{
@@ -270,37 +266,28 @@ footer .section_centrale{
     margin-top:-4px;
     margin-left: 1px;
     display: block;   
-    margin-block-start: 1em;
-    margin-block-end: 2em;
-    margin-inline-start: 2em;
-    margin-inline-end: 0px;
 }
-
+#footer_droit{
+    margin-block-start: 220px;
+}
 
 .derniere_partie{
     margin-top: -220px;
 }
 
-#footer_droit{
-    margin-block-start: 180px;
-}
-
 /* Responsive*/
 @media all and (max-width: 800px){
-  
-    *{
-    -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-          overflow-x: unset;    
-      }
-     
+    
      html, body{
         max-width: 800px;
         overflow-x: hidden;
+        overflow-anchor: none;
      } 
-     
 
+     body{
+         border: unset;
+     }
+     
     .photo{
         width: 100%;
         height: 300px;
@@ -310,16 +297,14 @@ footer .section_centrale{
    
     h1{
         width: 100%;
-        text-align: right;
-        margin-left: 50px;
-        font-size: 50px;
+        font-size: 30px;
+        margin-left: 2em;
     }
 
     .sous_titre{
         width: 100%;
-        text-align: end;
-        font-size: 30px;
-        margin-left: 0;
+        font-size: 22px;
+        margin-left: 2.8em;
     }
 
     header{
@@ -331,12 +316,25 @@ footer .section_centrale{
 
     main{
         flex-direction: column-reverse;
-        font-size: 30px;          
+             
     }    
 
    #bloc-droit{
     width: 100%;
     margin: auto;
+   }
+
+   .bloc_date{
+       margin-bottom: 20px;
+   }
+   
+   .bloc_date_et_contenu{
+   margin-right: 0px;
+}
+   
+
+   .bloc_section_droite{
+       margin-right: unset;
    }
 
     aside{
@@ -357,7 +355,7 @@ footer .section_centrale{
     }
 
     .coordonnees{
-        padding: 8% 15% 8% 15%
+        padding: 8% 15% 8% 15%;
         font-weight: bold;
         font-size: 30px;
         text-align: center;
